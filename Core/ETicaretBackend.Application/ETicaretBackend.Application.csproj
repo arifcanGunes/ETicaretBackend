@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETicaretBackend.Domain\ETicaretBackend.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\RepositoryOfCustomer\" />
+    <None Remove="Repositories\RepositoryOfProduct\" />
+    <None Remove="Repositories\RepositoryOfOrder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\RepositoryOfCustomer\" />
+    <Folder Include="Repositories\RepositoryOfProduct\" />
+    <Folder Include="Repositories\RepositoryOfOrder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿using System;
+using ETicaretBackend.Domain.Entities;
+
+namespace ETicaretBackend.Application.Repositories.RepositoryOfOrder
+{
+	public interface IOrderReadRepository : IReadRepository<Order>
+	{
+	}
+}
+
